@@ -13,7 +13,7 @@ type Produtos = {
   styleUrls: ['./caixa.component.css'],
 })
 export class CaixaComponent implements OnInit {
-  resource: FormGroup;
+  public resource: FormGroup;
   produtos: Produtos[] = [];
 
   produtosCadastrados: Produtos[] = [];

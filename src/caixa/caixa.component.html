@@ -1,6 +1,13 @@
 <div>
-    <form [formGroup]="resource"  (submit)="cadastrarProduto()">
-      <input type="text" name="codigo" formControlName="codigo" placeholder="digite o código" >
-      <button type="submit">CADASTRAR<button>
-    </form>
+  <h3>cadastro de arquivos</h3>
+  <form [formGroup]="resource" (submit)="cadastrarProduto()">
+    <input
+      style="color: red;"
+      type="text"
+      name="codigo"
+      formControlName="codigo"
+      placeholder="digite o código"
+    />
+    <button type="submit">CADASTRAR</button>
+  </form>
 </div>
