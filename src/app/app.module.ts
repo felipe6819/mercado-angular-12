@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from 'ngx-bootstrap';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CaixaComponent } from '../caixa/caixa.component';
@@ -6,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, CaixaComponent],
-  imports: [ReactiveFormsModule, BrowserModule, FormsModule],
+  imports: [BrowserModule, ReactiveFormsModule, FormsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

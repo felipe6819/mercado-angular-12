@@ -14,13 +14,27 @@ type Produtos = {
 })
 export class CaixaComponent implements OnInit {
   public resource: FormGroup;
+
   produtos: Produtos[] = [];
 
   produtosCadastrados: Produtos[] = [];
 
   constructor(private fb: FormBuilder) {}
 
+  nomes = ['Pão', 'Manteiga', 'Tapioca', 'Bolo', 'Leite'];
+
   ngOnInit() {
+    for (let i = 1; i <= 1000; i++) {
+      const nomeAleatorio =
+        this.nomes[Math.floor(Math.random() * this.nomes.length)];
+      const produto = {
+        nome: nomeAleatorio,
+        codigo: `${i}`,
+        preco: Math.floor(Math.random() * 100) + 1,
+      };
+      this.produtos.push(produto);
+    }
+
     this.resource = this.fb.group({
       codigo: [null, [Validators.required]],
     });

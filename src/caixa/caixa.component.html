@@ -11,3 +11,10 @@
     <button type="submit">CADASTRAR</button>
   </form>
 </div>
+
+<div *ngFor="let produto of produtosCadastrados">
+  <h2>{{ produto.nome }}</h2>
+  <p>Código: {{ produto.codigo }}</p>
+  <p>Preço: R$ {{ produto.preco.toFixed(2) }}</p>
+  <hr />
+</div>
