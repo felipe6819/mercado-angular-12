@@ -21,7 +21,7 @@ export class CaixaComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {}
 
-  nomes = ['Pão', 'Manteiga', 'Tapioca', 'Bolo', 'Leite'];
+  nomes = ['apple', 'sansung', 'motorola', 'poco', 'xaomi'];
 
   ngOnInit() {
     for (let i = 1; i <= 1000; i++) {
