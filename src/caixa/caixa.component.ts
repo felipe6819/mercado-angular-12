@@ -46,6 +46,7 @@ export class CaixaComponent implements OnInit {
     const produto = this.produtos.find((x) => x.codigo === codigo);
 
     if (produto) this.produtosCadastrados.push(produto);
+    this.produtosCadastrados.reverse();
     this.resource.reset();
   }
 }
