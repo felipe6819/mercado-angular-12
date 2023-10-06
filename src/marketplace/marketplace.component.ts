@@ -8,11 +8,11 @@ type Produtos = {
 };
 
 @Component({
-  selector: 'app-caixa',
-  templateUrl: './caixa.component.html',
-  styleUrls: ['./caixa.component.css'],
+  selector: 'app-marketplace',
+  templateUrl: './marketplace.component.html',
+  styleUrls: ['./marketplace.component.css'],
 })
-export class CaixaComponent implements OnInit {
+export class MarketplaceComponent implements OnInit {
   public resource: FormGroup;
 
   produtos: Produtos[] = [];
