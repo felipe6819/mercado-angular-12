@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MeuServicoService {
-  private apiUrl = 'https://stackblitz.com/edit/base-angular-12-app-zcdh9a';
+  private apiUrl = 'https://jsonplaceholder.typicode.com/';
 
   constructor(private http: HttpClient) {}
 
